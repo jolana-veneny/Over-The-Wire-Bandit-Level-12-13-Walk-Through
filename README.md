@@ -18,7 +18,7 @@ bandit12@bandit:~$ cp data.txt /tmp/user
 bandit12@bandit:/$ cd tmp/user
 ```
 
-When we `cat` the data.txt file we will see something like this: 
+When we `cat` the data.txt file we will see something like this: </br>
 ![image](https://user-images.githubusercontent.com/101567957/158242416-72f8bba6-472f-42eb-a910-1a52674a90cc.png)
 
 As the instructions said, this is a hexdump of a file we need to decompress. This means that to get to the file we need, we need to reverse the hexdump. For this we need to use the `xxd` command with the `-r` flag. We also need to save the output in a new file data1.txt. 
