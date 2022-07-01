@@ -13,12 +13,12 @@ First, we need to follow the initial instructions and create your own temporary 
 
 
 ```
-bandit12@bandit:~$ mkdir /tmp/user </br>
-bandit12@bandit:~$ cp data.txt /tmp/user </br>
+bandit12@bandit:~$ mkdir /tmp/user 
+bandit12@bandit:~$ cp data.txt /tmp/user 
 bandit12@bandit:/$ cd tmp/user
 ```
 
-When we `cat` the data.txt file we will see something like this: </br>
+When we `cat` the data.txt file we will see something like this: 
 ![image](https://user-images.githubusercontent.com/101567957/158242416-72f8bba6-472f-42eb-a910-1a52674a90cc.png)
 
 As the instructions said, this is a hexdump of a file we need to decompress. This means that to get to the file we need, we need to reverse the hexdump. For this we need to use the `xxd` command with the `-r` flag. We also need to save the output in a new file data1.txt. 
@@ -29,7 +29,7 @@ bandit12@bandit:/tmp/user$ xxd -r data.txt data1.txt
 ```
 
 
-When you `cat` data1.txt you will see that the file isn’t human-readable: </br>
+When you `cat` data1.txt you will see that the file isn’t human-readable: 
 
 ![image](https://user-images.githubusercontent.com/101567957/158242699-4e5dfb8b-f569-444b-a867-883eab3a9f71.png)
 
